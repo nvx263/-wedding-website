@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8f4ef" />
+  <meta name="description" content="Một câu chuyện tình yêu, một ngày trọng đại." />
+  <title>Our Wedding — Một ngày của chúng mình</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
+  <div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+  <div class="preloader" aria-hidden="true"><span class="preloader-mark">A <i>&</i> B</span><span class="preloader-line"></span></div>
+  <header class="site-header">
+    <a class="brand" href="#home">A <span>&</span> B</a>
+    <nav class="desktop-nav" aria-label="Điều hướng chính">
+      <a href="#story">Chuyện chúng mình</a><a href="#gallery">Album ảnh</a><a href="#wedding">Ngày trọng đại</a><a href="#location">Địa điểm</a>
+    </nav>
+    <button class="music-toggle" id="musicToggle" aria-label="Bật hoặc tắt nhạc nền"><span class="music-bars"><i></i><i></i><i></i><i></i></span><span id="musicLabel">Bật nhạc</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image" role="img" aria-label="Ảnh cưới của cô dâu và chú rể"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow reveal">CHÚNG MÌNH SẮP VỀ CHUNG MỘT NHÀ</p>
+        <h1 class="hero-title reveal">Anh <em>&</em> Em</h1>
+        <p class="hero-subtitle reveal">Một tình yêu, một hành trình, một lời hứa mãi mãi.</p>
+        <div class="hero-date reveal"><span></span><time data-wedding-date>20 · 12 · 2026</time><span></span></div>
+        <a class="scroll-cue" href="#intro"><span>CUỘN ĐỂ KHÁM PHÁ</span><i></i></a>
+      </div>
+      <div class="hero-side-note">THE BEGINNING OF FOREVER · 2026</div>
+    </section>
+
+    <section class="intro section-pad" id="intro">
+      <p class="eyebrow reveal">GỬI NHỮNG NGƯỜI THƯƠNG</p>
+      <h2 class="section-heading reveal">Chúng mình đã tìm thấy<br><em>nhà</em> trong nhau.</h2>
+      <p class="intro-copy reveal">Có những cuộc gặp gỡ tưởng chừng ngẫu nhiên, nhưng lại trở thành điều đẹp đẽ nhất cuộc đời. Chúng mình rất vui nếu bạn có mặt để cùng chia sẻ khoảnh khắc đặc biệt này.</p>
+      <div class="ornament reveal" aria-hidden="true">✳</div>
+    </section>
+
+    <section class="story section-pad" id="story">
+      <div class="story-heading">
+        <div><p class="eyebrow reveal">TỪ NGÀY ĐẦU TIÊN</p><h2 class="section-heading reveal">Our <em>story</em></h2></div>
+        <p class="story-aside reveal">Từng khoảnh khắc nhỏ<br>đã dẫn chúng mình đến hôm nay.</p>
+      </div>
+      <div class="story-grid">
+        <figure class="story-photo reveal"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85" alt="Khoảnh khắc tình yêu" loading="lazy"><figcaption>THE MOMENTS THAT MATTER</figcaption></figure>
+        <div class="timeline">
+          <article class="timeline-item reveal"><span class="timeline-number">01</span><div><p class="timeline-date">MỘT NGÀY ĐẸP TRỜI</p><h3>Lần đầu gặp gỡ</h3><p>Chúng mình gặp nhau theo cách thật bình thường, nhưng rồi mọi điều sau đó chẳng còn bình thường nữa.</p></div></article>
+          <article class="timeline-item reveal"><span class="timeline-number">02</span><div><p class="timeline-date">NGÀY TRÁI TIM LÊN TIẾNG</p><h3>Lời tỏ tình</h3><p>Từ những câu chuyện nhỏ mỗi ngày, chúng mình bắt đầu viết nên câu chuyện của riêng hai người.</p></div></article>
+          <article class="timeline-item reveal"><span class="timeline-number">03</span><div><p class="timeline-date">LỜI HỨA MÃI MÃI</p><h3>Về chung một nhà</h3><p>Và giờ đây, chúng mình muốn cùng bạn đánh dấu chương mới rực rỡ nhất.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <div class="quote-bg"></div><div class="quote-inner reveal"><span class="quote-mark">“</span><p>In all the world, there is<br>no heart for me like yours.</p><span class="quote-credit">— MAYA ANGELOU</span></div>
+    </section>
+
+    <section class="gallery section-pad" id="gallery">
+      <div class="gallery-heading"><p class="eyebrow reveal">NHỮNG ĐIỀU MUỐN LƯU GIỮ</p><h2 class="section-heading reveal">Our <em>moments</em></h2><p class="gallery-description reveal">Một vài mảnh ghép nhỏ trong hành trình của chúng mình. Chạm vào ảnh để ngắm nhìn rõ hơn.</p></div>
+      <div class="gallery-grid">
+        <button class="gallery-item gallery-tall reveal" data-full="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1800&q=90" aria-label="Xem ảnh kỷ niệm 1"><img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=900&q=85" alt="Cặp đôi trong ngày đặc biệt" loading="lazy"><span>01 / THE BEGINNING</span></button>
+        <button class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=90" aria-label="Xem ảnh kỷ niệm 2"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85" alt="Không gian lễ cưới" loading="lazy"><span>02 / LITTLE MOMENTS</span></button>
+        <button class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=1800&q=90" aria-label="Xem ảnh kỷ niệm 3"><img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=900&q=85" alt="Hoa cưới" loading="lazy"><span>03 / FOREVER</span></button>
+        <button class="gallery-item gallery-wide reveal" data-full="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=1800&q=90" aria-label="Xem ảnh kỷ niệm 4"><img src="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=1200&q=85" alt="Cặp đôi cùng nhau" loading="lazy"><span>04 / OUR KIND OF MAGIC</span></button>
+      </div>
+      <p class="gallery-note">Ảnh hiện tại là ảnh minh họa — hãy thay bằng ảnh của hai bạn để hoàn thiện website.</p>
+    </section>
+
+    <section class="wedding section-pad" id="wedding">
+      <div class="wedding-photo reveal"><img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1400&q=85" alt="Bàn tiệc cưới" loading="lazy"></div>
+      <div class="wedding-info">
+        <p class="eyebrow reveal">SAVE THE DATE</p><h2 class="section-heading reveal">The big <em>day</em></h2>
+        <p class="wedding-intro reveal">Chúng mình trân trọng mời bạn đến chung vui trong ngày khởi đầu hành trình mới.</p>
+        <div class="date-card reveal"><span class="date-month">THÁNG 12 · 2026</span><strong>20</strong><span class="date-weekday">CHỦ NHẬT · 10:30</span><span class="date-rule"></span><span class="date-venue">TÊN NHÀ HÀNG / ĐỊA ĐIỂM CƯỚI</span></div>
+        <div class="countdown reveal" aria-label="Đếm ngược đến ngày cưới"><div><strong id="days">00</strong><span>NGÀY</span></div><i>:</i><div><strong id="hours">00</strong><span>GIỜ</span></div><i>:</i><div><strong id="minutes">00</strong><span>PHÚT</span></div><i>:</i><div><strong id="seconds">00</strong><span>GIÂY</span></div></div>
+      </div>
+    </section>
+
+    <section class="location section-pad" id="location">
+      <p class="eyebrow reveal">HẸN GẶP BẠN Ở ĐÓ</p><h2 class="section-heading reveal">Find <em>us</em></h2>
+      <p class="location-copy reveal">Sự hiện diện của bạn là món quà quý giá nhất đối với chúng mình.</p>
+      <div class="location-card reveal"><div class="location-icon">⌖</div><div><p class="eyebrow">ĐỊA ĐIỂM TỔ CHỨC</p><h3>Tên nhà hàng / địa điểm cưới</h3><p>Vui lòng cập nhật địa chỉ cụ thể tại đây.</p></div><a class="text-link" id="mapLink" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">MỞ BẢN ĐỒ ↗</a></div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-image"></div><div class="closing-overlay"></div><div class="closing-content reveal"><p class="eyebrow">WITH LOVE, ALWAYS</p><h2>Anh <em>&</em> Em</h2><p>Cảm ơn bạn đã là một phần trong câu chuyện của chúng mình.</p><span class="closing-date">20 · 12 · 2026</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home">A <span>&</span> B</a><p>MADE WITH LOVE · 2026</p><a href="#home">TRỞ VỀ ĐẦU TRANG ↑</a></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Ảnh phóng to"><button class="lightbox-close" id="lightboxClose" aria-label="Đóng ảnh">×</button><button class="lightbox-prev" id="lightboxPrev" aria-label="Ảnh trước">‹</button><img id="lightboxImage" src="" alt="Ảnh phóng to"><button class="lightbox-next" id="lightboxNext" aria-label="Ảnh tiếp theo">›</button></div>
+  <audio id="bgMusic" loop preload="none"><source src="assets/wedding-music.mp3" type="audio/mpeg"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
